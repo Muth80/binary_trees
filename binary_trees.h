@@ -1,6 +1,8 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
 
+#include <stddef.h>
+
 // Basic Binary Tree
 struct binary_tree_s {
     int n;
@@ -10,6 +12,9 @@ struct binary_tree_s {
 };
 
 typedef struct binary_tree_s binary_tree_t;
+
+/* Function to print a binary tree */
+void binary_tree_print(const binary_tree_t *tree);
 
 // Binary Search Tree
 typedef struct binary_tree_s bst_t;
